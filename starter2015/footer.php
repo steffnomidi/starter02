@@ -1,3 +1,4 @@
+  </div>
   <footer>
      <ul class="menu">
       <li><a href="">О компании</a></li>

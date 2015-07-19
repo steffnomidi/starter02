@@ -35,6 +35,7 @@ a {
   -o-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  text-decoration: none;
 }
 a:hover{
 
@@ -95,11 +96,13 @@ section:after,
   background: url(../images/marker.png) no-repeat left top;
   padding-left: 30px;
   min-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 .header-contacts .adress span {
   display: inline-block;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0,0,0,.3);
+  line-height: 12px;
 }
 .header-contacts .contacts-col {
   float: left;
@@ -142,7 +145,8 @@ section:after,
 #menu ul.menu li a {
   font-size: 16px;
   color: #000000;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0,0,0,.3);
+  line-height: 12px;
   display: inline-block;
 }
 #slideshow {
@@ -218,7 +222,7 @@ section:after,
 #articles .article a {
   font-size: 14px;
   color: #f68f1e;
-  text-decoration: underline!important;
+  text-decoration: underline;
 
 }
 #articles .mod-title {
@@ -231,7 +235,7 @@ a.more {
   line-height: 14px;
   padding: 11px 34px 10px;
   position: relative;
-  text-decoration: underline!important;
+  text-decoration: underline;
   border-top: 1px solid #f68f1e;
   border-left: 1px solid #f68f1e;
   border-bottom: 1px solid #f68f1e;
@@ -262,6 +266,7 @@ a.more:after {
 }
 #products {
   padding-bottom: 35px;
+  position: relative;
 }
 #products .mod-title {
   margin-bottom: 20px;
@@ -347,6 +352,7 @@ a.more:after {
 }
 .list-products .product .product-img img {
   width: 100%;
+  height: auto;
 }
 .list-products .product .product-info {
   float: left;
@@ -356,7 +362,7 @@ a.more:after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.list-products .order {
+.list-products .order, .btn {
   background: #f68f1e;
   font-size: 14px;
   line-height: 14px;
@@ -388,7 +394,7 @@ footer .menu li {
 }
 footer a {
   color: #48484a;
-  text-decoration: underline!important;
+  text-decoration: underline;
   font-size: 14px;
 }
 .footer-bottom {
@@ -420,7 +426,7 @@ footer a {
   font-size: 13px;
   line-height: 13px;
   color: #969696;
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
 #breadcrumbs span {
   color: #2c1a37;
@@ -437,4 +443,44 @@ footer a {
   font-size: 16px;
   line-height: 24px;
   color: #48484a;
+}
+
+.loading {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+	background: url(../images/loading.gif) no-repeat 50% 50% rgb(239, 239, 239);
+	opacity: .5;
+}
+
+.over {
+	position: fixed;
+	top: 0;
+	right: 0px;
+	left: 0;
+	height: 100%;
+	background-color: rgba(255,255,255,.8);
+	opacity: 0;
+	z-index: -1; 
+	transition: opacity .3s;
+	padding: 20px;
+}
+.over.active {
+	opacity: 1;
+	z-index: 100; 
+
+	}
+.over .form {
+	width: 500px;
+	min-height: 200px;
+	margin: 50px auto;
+	background-color: #fff;
+}
+.over .form input[type=email], .over .form input[type=text], .over .form textarea{
+	width: 100%;
+	padding: 5px;
+	display: block;
 }

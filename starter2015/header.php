@@ -7,7 +7,6 @@
   <title>Главная</title>
   <meta name="robots" content="noodp" />
   <?php wp_head(); ?>
-  <link rel="stylesheet" href="<?php echo $tpath; ?>css/style.css" />
 </head>
 <body>
   <div class="main">
@@ -16,7 +15,7 @@
       <div class="header-contacts">
         <div class="contacts-col">
           <div class="adress">
-            <span>г.Уфа, ул.Сельская Богородская, 57</span>
+            <span>г. Уфа, ул. Сельская Богородская, 57</span>
           </div>
           <div class="phone">
             <span><span class="code">+7 (901)</span>816-03-03</span>
@@ -25,7 +24,7 @@
         </div>
         <div class="contacts-col">
           <div class="adress">
-            <span>г.фа, ул. Бакалинская, 52</span>
+            <span>г. Уфа, ул. Бакалинская, 52</span>
           </div>
           <div class="phone">
             <span><span class="code">+7 (901)</span>440 96 44</span>
